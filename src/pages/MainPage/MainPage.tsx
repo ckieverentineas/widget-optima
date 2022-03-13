@@ -1,4 +1,4 @@
-import { Buttons } from '../../components/button'
+import { Button } from '../../components/button'
 import { Headers } from '../../components/header'
 
 export function MainPage() {
@@ -12,7 +12,7 @@ export function MainPage() {
       </div>
       <h1>Let’s find your perfect pair!</h1>
       <p>Take the quiz to easily discover your perfect fit from thousands of styles</p>
-      <Buttons name="Start Now" />
+      <Button>Start Now</Button>
     </>
   )
 }
