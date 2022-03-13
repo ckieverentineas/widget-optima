@@ -1,3 +1,9 @@
+import MainPage from '../../pages/MainPage/MainPage'
+
 export default function App() {
-  return <div>Hello world</div>
+  return (
+    <div>
+      <MainPage />
+    </div>
+  )
 }
