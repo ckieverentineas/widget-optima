@@ -1,7 +1,7 @@
-import Buttons from '../../components/button/button'
-import Headers from '../../components/header/header'
+import { Buttons } from '../../components/button'
+import { Headers } from '../../components/header'
 
-export default function MainPage() {
+export function MainPage() {
   return (
     <>
       <div>

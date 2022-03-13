@@ -1,6 +1,6 @@
 import './header.css'
 
-export default function Headers() {
+export function Headers() {
   return (
     <header>
       <img className={'logo'} src="/img/logo.jpg" alt="logo" />

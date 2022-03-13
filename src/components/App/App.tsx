@@ -1,6 +1,6 @@
-import MainPage from '../../pages/MainPage/MainPage'
+import { MainPage } from '../../pages/MainPage'
 
-export default function App() {
+export function App() {
   return (
     <div>
       <MainPage />
