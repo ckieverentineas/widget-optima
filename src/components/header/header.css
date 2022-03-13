@@ -1,0 +1,20 @@
+header {
+    background: white;
+    width: 100%;
+    border: 2px solid grey;
+}
+
+.logo {
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 38px;
+}
+
+.next {
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    float: right;
+}

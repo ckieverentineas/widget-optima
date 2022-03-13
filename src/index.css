@@ -1,0 +1,14 @@
+div {
+    width: 100%;
+}
+img {
+    width: auto;
+}
+header {
+    width: 100%;
+}
+@media (max-width: 100%) {
+    * {
+        min-width: 100px;
+    }
+}
