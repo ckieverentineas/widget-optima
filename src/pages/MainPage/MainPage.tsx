@@ -1,11 +1,11 @@
 import { Button } from '../../components/button'
-import { Headers } from '../../components/header'
+import { Header } from '../../components/header'
 
 export function MainPage() {
   return (
     <>
       <div>
-        <Headers />
+        <Header />
       </div>
       <div>
         <img className={'next'} src="/img/main-page.jpg" alt="button-next" />

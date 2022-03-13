@@ -1,22 +1,21 @@
 import styled from '@emotion/styled/macro'
 
-export const Header = styled.header`
+export const Wrap = styled.header`
   background: white;
-  width: 100%;
-  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+  height: 66px;
+  padding: 0 25px;
+  box-shadow: 0px 1px 7px rgba(58, 72, 80, 0.07);
 `
 
 export const Logo = styled.img`
-  padding-left: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  width: 120px;
   height: 38px;
-  float: left;
 `
 
 export const Next = styled.img`
-  padding-right: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  float: right;
+  width: 10px;
+  height: 18px;
+  margin-left: auto;
 `
