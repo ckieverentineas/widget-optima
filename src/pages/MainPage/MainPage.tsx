@@ -1,18 +1,19 @@
 import { Button } from '../../components/button'
 import { Header } from '../../components/header'
+import { Content, Description, MainImage, Title } from './MainPage.components'
 
 export function MainPage() {
   return (
     <>
-      <div>
-        <Header />
-      </div>
-      <div>
-        <img className={'next'} src="/img/main-page.jpg" alt="button-next" />
-      </div>
-      <h1>Let’s find your perfect pair!</h1>
-      <p>Take the quiz to easily discover your perfect fit from thousands of styles</p>
-      <Button>Start Now</Button>
+      <Header />
+      <Content>
+        <MainImage src="/img/main-page.png" alt="Happy to see you" />
+        <Title>Let’s find your perfect pair!</Title>
+        <Description>
+          Take the quiz to easily discover your perfect fit from thousands of styles
+        </Description>
+        <Button>Start Now</Button>
+      </Content>
     </>
   )
 }

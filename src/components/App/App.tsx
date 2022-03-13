@@ -1,9 +1,10 @@
 import { MainPage } from '../../pages/MainPage'
+import { Wrap } from './App.components'
 
 export function App() {
   return (
-    <div>
+    <Wrap>
       <MainPage />
-    </div>
+    </Wrap>
   )
 }
