@@ -1,11 +1,11 @@
-import './header.css'
+import { Header, Logo, Next } from './header-components'
 
 export function Headers() {
   return (
-    <header>
-      <img className={'logo'} src="/img/logo.jpg" alt="logo" />
+    <Header>
+      <Logo src="/img/logo.jpg" alt="logo" />
 
-      <img className={'next'} src="/img/button-next.jpg" alt="button-next" />
-    </header>
+      <Next src="/img/button-next.jpg" alt="button-next" />
+    </Header>
   )
 }
