@@ -4,9 +4,9 @@
 
 Проект разрабатывается на Международную цифровую олимпиаду «Волга-IT’22» по Дисциплине «Программирование на языке JavaScript»
 
-Для запуска проекта рекомендуется предустановленная Node.js v 15.8.0 
+Для запуска проекта рекомендуется предустановленная Node.js v 15.8.0
 
-git clone https://github.com/ckieverentineas/widget-optima.git  
-cd widget  
-npm i  
-npm start  
+git clone https://github.com/ckieverentineas/widget-optima.git
+cd widget
+npm i
+npm start

@@ -1,22 +1,11 @@
-import "./header.css"
+import './header.css'
 
 export default function Headers() {
-    return(
+  return (
+    <header>
+      <img className={'logo'} src="/img/logo.jpg" alt="logo" />
 
-            <header>
-                    <img className={'logo'}
-                        src="/img/logo.jpg"
-                        alt="logo"
-                    />
-            
-                    
-                        <img className={'next'}
-                            src="/img/button-next.jpg"
-                            alt="button-next"
-                        />
-                    
-
-            </header>
-
-    )
+      <img className={'next'} src="/img/button-next.jpg" alt="button-next" />
+    </header>
+  )
 }
