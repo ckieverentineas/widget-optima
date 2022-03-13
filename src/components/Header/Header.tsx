@@ -1,4 +1,4 @@
-import { Logo, Next, Wrap } from './header-components'
+import { Logo, Next, Wrap } from './Header.components'
 
 export function Header() {
   return (

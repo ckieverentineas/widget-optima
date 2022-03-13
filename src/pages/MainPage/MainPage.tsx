@@ -1,5 +1,5 @@
-import { Button } from '../../components/button'
-import { Header } from '../../components/header'
+import { Button } from '../../components/Button'
+import { Header } from '../../components/Header'
 import { Content, Description, MainImage, Title } from './MainPage.components'
 
 export function MainPage() {
