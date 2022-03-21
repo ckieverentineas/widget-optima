@@ -31,12 +31,6 @@ export const Counter = styled.div`
 
   color: #3c5060;
 `
-
-export const Progress = styled.progress`
-  align-items: flex-end;
-  align-self: flex-end;
-`
-
 export const Back = styled.img`
   width: 10px;
   height: 18px;
