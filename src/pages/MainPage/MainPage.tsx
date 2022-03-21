@@ -1,12 +1,16 @@
+import { useState } from 'react'
+
 import { Button } from '@/components/Button'
 import { Header } from '@/components/Header'
 
 import { Content, Description, MainImage, Title } from './MainPage.components'
 
 export function MainPage() {
+  const [currentStage, setCurrentStage] = useState(0)
+  const [countStage, setCountStage] = useState(10)
   return (
     <>
-      <Header />
+      <Header currentStage={currentStage} countStage={countStage}></Header>
       <Content>
         <MainImage src="/img/main-page.png" alt="Happy to see you" />
         <Title>Let’s find your perfect pair!</Title>

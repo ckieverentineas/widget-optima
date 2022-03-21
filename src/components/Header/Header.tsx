@@ -2,20 +2,26 @@ import { useState } from 'react'
 
 import { Back, Counter, Exit, Logo, Next, Wrap } from './Header.components'
 
-export function Header() {
-  const [progress_bar, SetProgress_Bar] = useState(5)
+export function Header(props: { currentStage: number; countStage: number }) {
   function Test() {
-    if (progress_bar == 0) {
+    if (props.currentStage == 0) {
       return (
         <Wrap>
           <Logo src="/img/logo.png" alt="Optimax Dev" />
           <Next src="/img/button-next.png" alt="button-next" />
         </Wrap>
       )
-    } else {
+    } else if (props.currentStage <= props.countStage) {
       return (
         <Wrap>
           <Back src="/img/button-back.png" alt="button-back" />
+          <Exit src="/img/button-exit.png" alt="button-exit" />
+        </Wrap>
+      )
+    } else {
+      return (
+        <Wrap>
+          <Logo src="/img/logo.png" alt="Optimax Dev" />
           <Exit src="/img/button-exit.png" alt="button-exit" />
         </Wrap>
       )
