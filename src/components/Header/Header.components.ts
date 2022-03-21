@@ -19,16 +19,11 @@ export const Next = styled.img`
   height: 18px;
   margin-left: auto;
 `
-export const Counter = styled.div`
-  font-family: 'Open Sans';
-  font-style: normal;
+export const Counter = styled.p`
+  padding-left: calc();
   font-weight: 400;
   font-size: 18px;
   line-height: 19px;
-  /* identical to box height, or 106% */
-
-  text-align: center;
-
   color: #3c5060;
 `
 export const Back = styled.img`

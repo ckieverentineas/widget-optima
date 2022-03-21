@@ -14,7 +14,18 @@ export function Header(props: { currentStage: number; countStage: number }) {
     } else if (props.currentStage <= props.countStage) {
       return (
         <Wrap>
-          <Back src="/img/button-back.png" alt="button-back" />
+          <Back
+            src="/img/button-back.png"
+            alt="button-back"
+            onClick={() => {
+              console.log('worked')
+            }}
+          />
+          <div>
+            <Counter>
+              {props.currentStage}/{props.countStage}
+            </Counter>
+          </div>
           <Exit src="/img/button-exit.png" alt="button-exit" />
         </Wrap>
       )

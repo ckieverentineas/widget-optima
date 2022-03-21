@@ -6,8 +6,8 @@ import { Header } from '@/components/Header'
 import { Content, Description, MainImage, Title } from './MainPage.components'
 
 export function MainPage() {
-  const [currentStage, setCurrentStage] = useState(0)
-  const [countStage, setCountStage] = useState(10)
+  const [currentStage, setCurrentStage] = useState(1)
+  const countStage = 10
   return (
     <>
       <Header currentStage={currentStage} countStage={countStage}></Header>
