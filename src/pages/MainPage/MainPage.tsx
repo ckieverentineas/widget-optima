@@ -11,7 +11,11 @@ export function MainPage() {
   const countStage = 10
   return (
     <>
-      <Header currentStage={currentStage} countStage={countStage}></Header>
+      <Header
+        currentStage={currentStage}
+        countStage={countStage}
+        onUpdateCurrentStage={setCurrentStage}
+      ></Header>
       <ProgressBar currentStage={currentStage} countStage={countStage}></ProgressBar>
       <Content>
         <MainImage src="/img/main-page.png" alt="Happy to see you" />

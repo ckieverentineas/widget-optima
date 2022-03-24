@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 import { Back, Counter, Exit, Logo, Next, Wrap } from './Header.components'
 
-export function Header(props: { currentStage: number; countStage: number }) {
-  const [currentCounter, setCurrentCounter] = useState(props.currentStage)
+export function Header(props: {
+  currentStage: number
+  countStage: number
+  onUpdateCurrentStage: (newStage: number) => void
+}) {
   function Test() {
-    if (currentCounter == 0) {
+    if (props.currentStage == 0) {
       return (
         <Wrap>
           <Logo src="/img/logo.png" alt="Optimax Dev" />
@@ -13,31 +16,31 @@ export function Header(props: { currentStage: number; countStage: number }) {
             src="/img/button-next.png"
             alt="button-next"
             onClick={() => {
-              setCurrentCounter(currentCounter + 1)
+              props.onUpdateCurrentStage(props.currentStage + 1)
             }}
           />
         </Wrap>
       )
-    } else if (currentCounter <= props.countStage) {
+    } else if (props.currentStage <= props.countStage) {
       return (
         <Wrap>
           <Back
             src="/img/button-back.png"
             alt="button-back"
             onClick={() => {
-              setCurrentCounter(currentCounter - 1)
+              props.onUpdateCurrentStage(props.currentStage - 1)
             }}
           />
           <div>
             <Counter>
-              {currentCounter}/{props.countStage}
+              {props.currentStage}/{props.countStage}
             </Counter>
           </div>
           <Exit
             src="/img/button-exit.png"
             alt="button-exit"
             onClick={() => {
-              setCurrentCounter(0)
+              props.onUpdateCurrentStage(0)
             }}
           />
         </Wrap>
