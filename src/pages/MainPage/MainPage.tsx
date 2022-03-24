@@ -15,8 +15,9 @@ export function MainPage() {
         currentStage={currentStage}
         countStage={countStage}
         onUpdateCurrentStage={setCurrentStage}
-      ></Header>
+      />
       <ProgressBar currentStage={currentStage} countStage={countStage}></ProgressBar>
+
       <Content>
         <MainImage src="/img/main-page.png" alt="Happy to see you" />
         <Title>Let’s find your perfect pair!</Title>

@@ -20,7 +20,6 @@ export const Next = styled.img`
   margin-left: auto;
 `
 export const Counter = styled.p`
-  padding-left: calc();
   font-weight: 400;
   font-size: 18px;
   line-height: 19px;
