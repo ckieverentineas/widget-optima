@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { Back, Counter, Exit, Logo, Next, Wrap } from './Header.components'
+import { Back, Counter, Exit, Logo, Next, Tester, Wrap } from './Header.components'
 
 export function Header(props: {
   currentStage: number
@@ -31,11 +31,11 @@ export function Header(props: {
               props.onUpdateCurrentStage(props.currentStage - 1)
             }}
           />
-          <div>
+          <Tester>
             <Counter>
               {props.currentStage}/{props.countStage}
             </Counter>
-          </div>
+          </Tester>
           <Exit
             src="/img/button-exit.png"
             alt="button-exit"
